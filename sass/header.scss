@@ -1,15 +1,55 @@
 header {
-    color: $main-color;
+    background-color: $main-color;
 
+    // Top Header
+    img {
+        max-height: 150px;
+    }
     div>img {
         float:left;
     }
+    div>h1 {
+       float: left;
+       margin: 35px 120px;
+       font-size: 4rem;
+    }
     div>div{
         float:right;
+        position: relative;
+        a {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            bottom: 0px;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 1.1rem;
+            background-color: rgba(183, 183, 183, 0.3);
+            &:hover{              
+                background-color: rgba(183, 183, 183, 0.7);
+            }
+        }
     }
     >div::after {
         content: "";
         clear: both;
         display: block;
+    }
+    // Bottom Header
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 0 15%;
+        li {
+            display: inline;
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            background-color: $sub-color;
+            color: #fff;
+            &:hover{
+              background-color: #25f7fa  
+            }
+        }
     }
 }
