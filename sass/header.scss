@@ -1,0 +1,15 @@
+header {
+    color: $main-color;
+
+    div>img {
+        float:left;
+    }
+    div>div{
+        float:right;
+    }
+    >div::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}

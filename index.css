@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+header div > img {
+  float: left;
+}
+header div > div {
+  float: right;
+}
+header > div::after {
+  content: "";
+  clear: both;
+  display: block;
+}/*# sourceMappingURL=index.css.map */

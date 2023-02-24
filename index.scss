@@ -1,0 +1,13 @@
+$main-color: #0adbde;
+$sub-color: #0adbded6;
+
+* { 
+margin: 0
+}
+li{
+    list-style-type: none;
+}
+
+@import 'sass/header.scss';
+@import 'sass/body.scss';
+@import 'sass/footer.scss';  
