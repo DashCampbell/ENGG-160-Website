@@ -1,0 +1,33 @@
+.login-page {
+    input,span {
+        display: block;
+        max-width: 300px;
+        width: 90%;
+        margin: 5px auto;
+    }
+    span {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    span:first-of-type {
+        margin-top: 80px;
+    }
+    input {
+        font-size: 1.1rem;
+        padding: 5px 15px;
+        width: calc(90% - 30px);
+    }
+    input[type='submit'] {
+        display: block;
+        margin: 25px auto 120px auto;
+        color: rgb(0, 180, 0);
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+
+        &:hover{
+            background-color: rgb(209, 209, 209);
+        }
+    }
+}

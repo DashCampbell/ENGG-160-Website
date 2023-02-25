@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -40,10 +41,10 @@ header div > div a {
   width: 100%;
   padding: 10px 0;
   font-size: 1.1rem;
-  background-color: rgba(183, 183, 183, 0.3);
+  background-color: rgba(183, 183, 183, 0.5);
 }
 header div > div a:hover {
-  background-color: rgba(183, 183, 183, 0.7);
+  background-color: rgba(183, 183, 183, 0.9);
 }
 header > div::after {
   content: "";
@@ -70,17 +71,18 @@ header ul li:hover {
 body {
   background-color: rgb(169, 222, 255);
 }
-body > div {
+
+.home-page > div {
   margin-bottom: 20px;
 }
-body > div > h2 {
+.home-page > div > h2 {
   margin-bottom: 15px;
   text-align: center;
   text-decoration: underline;
   font-size: 2.5rem;
   color: rgb(77, 77, 77);
 }
-body > div ul.download-links {
+.home-page > div ul.download-links {
   display: grid;
   width: 85%;
   margin: 0 auto;
@@ -89,31 +91,62 @@ body > div ul.download-links {
   text-align: center;
   font-size: 1.5rem;
 }
-body > div ul.download-links li {
+.home-page > div ul.download-links li {
   background-color: rgb(0, 171, 0);
   border-radius: 10px;
 }
-body > div ul.download-links li a {
+.home-page > div ul.download-links li a {
   display: block;
   padding: 25px 0;
 }
-body > div ul.download-links li:hover {
+.home-page > div ul.download-links li:hover {
   background-color: rgb(0, 204, 0);
 }
-body > div > h4 {
+.home-page > div > h4 {
   margin: 0 auto;
   padding-bottom: 5px;
   width: 60%;
   font-size: 2rem;
   text-decoration: underline;
 }
-body > div p {
+.home-page > div p {
   margin: 0 auto;
   padding: 20px;
   width: 60%;
   background-color: rgba(84, 84, 84, 0.368);
   color: #fff;
   border-radius: 7px;
+}
+
+.login-page input, .login-page span {
+  display: block;
+  max-width: 300px;
+  width: 90%;
+  margin: 5px auto;
+}
+.login-page span {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.login-page span:first-of-type {
+  margin-top: 80px;
+}
+.login-page input {
+  font-size: 1.1rem;
+  padding: 5px 15px;
+  width: calc(90% - 30px);
+}
+.login-page input[type=submit] {
+  display: block;
+  margin: 25px auto 120px auto;
+  color: rgb(0, 180, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+.login-page input[type=submit]:hover {
+  background-color: rgb(209, 209, 209);
 }
 
 footer {
@@ -136,6 +169,59 @@ footer div li a:hover {
   text-decoration: underline;
 }
 footer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.user-page .side-bar {
+  float: left;
+  width: 20%;
+  background-color: rgb(166, 166, 166);
+  color: white;
+  height: 100%;
+}
+.user-page .side-bar li {
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+}
+.user-page .side-bar li a {
+  padding: 10px 15px;
+  display: block;
+}
+.user-page .side-bar li:hover {
+  text-decoration: underline;
+  background-color: rgb(206, 206, 206);
+}
+.user-page > div:last-of-type {
+  float: right;
+  padding: 20px 30px;
+  width: calc(80% - 60px);
+}
+.user-page .user-profile h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.user-page .user-profile h3 {
+  margin-top: 16px;
+}
+.user-page .user-profile h4 {
+  margin-top: 10px;
+  border-bottom: solid black 2px;
+  max-width: 360px;
+}
+.user-page .user-profile img {
+  max-height: 360px;
+}
+.user-page .user-profile li {
+  list-style-type: disc;
+  margin: 7px 0px 7px 30px;
+}
+.user-page .user-profile p {
+  margin-top: 7px;
+}
+.user-page::after {
   clear: both;
   content: "";
   display: block;

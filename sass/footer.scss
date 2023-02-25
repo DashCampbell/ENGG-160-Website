@@ -1,0 +1,25 @@
+footer {
+    background-color: rgb(184, 184, 184);
+    color: #fff;
+    padding: 10px 20%;
+    div{
+        float: left;
+        padding-right: 40px;
+
+        h1{
+            font-size: 1.7rem;
+            text-decoration: underline;
+        }
+        li{
+            padding: 2px 0;
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
