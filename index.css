@@ -72,6 +72,42 @@ header ul li:hover {
 body {
   background-color: rgb(169, 222, 255);
 }
+body .user-page {
+  background-color: #C8C2AA;
+  color: #4D493E;
+}
+body .user-page .side-bar {
+  float: left;
+  width: 20%;
+  background-color: #C8C2AA;
+  height: 100%;
+}
+body .user-page .side-bar li {
+  border-color: #4D493E;
+  border-width: 3px;
+  border-style: solid;
+}
+body .user-page .side-bar li a {
+  display: block;
+  padding: 10px 15px;
+  color: #4D493E;
+}
+body .user-page .side-bar li a:hover {
+  text-decoration: underline;
+  background-color: #4D493E;
+  color: #C8C2AA;
+}
+body .user-page > div:last-of-type {
+  float: right;
+  padding: 5px 10px;
+  width: calc(80% - 46px);
+  margin: 10px;
+}
+body .user-page::after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 .home-page > div {
   margin-bottom: 20px;
@@ -150,6 +186,53 @@ body {
   background-color: rgb(209, 209, 209);
 }
 
+.user-profile {
+  border: solid #4D493E 3px;
+}
+.user-profile h2, .user-profile h3, .user-profile h4 {
+  background-color: #4D493E;
+  color: #C8C2AA;
+  box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
+}
+.user-profile h1 {
+  background-color: #C8C2AA;
+  color: #4D493E;
+  text-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
+  box-shadow: none;
+  border-bottom: solid #4D493E 3px;
+  padding-right: 120px;
+  font-size: 3rem;
+}
+.user-profile h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  padding: 3px 80px 3px 30px;
+  margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.user-profile h3 {
+  margin-top: 16px;
+  padding: 2px 10px;
+  width: 200px;
+}
+.user-profile h4 {
+  margin-top: 15px;
+  max-width: 200px;
+  padding: 2px 10px;
+}
+.user-profile img {
+  max-height: 360px;
+}
+.user-profile li {
+  list-style-type: disc;
+  margin: 7px 0px 7px 30px;
+}
+.user-profile p {
+  margin-top: 7px;
+}
+
 footer {
   background-color: rgb(184, 184, 184);
   color: #fff;
@@ -175,84 +258,72 @@ footer::after {
   display: block;
 }
 
-.user-page {
-  background-color: #C8C2AA;
-  color: #4D493E;
-}
-.user-page .side-bar {
-  float: left;
-  width: 20%;
-  background-color: #C8C2AA;
-  height: 100%;
-}
-.user-page .side-bar li {
-  border-color: #4D493E;
-  border-width: 3px;
-  border-style: solid;
-}
-.user-page .side-bar li a {
-  display: block;
-  padding: 10px 15px;
-  color: #4D493E;
-}
-.user-page .side-bar li a:hover {
-  text-decoration: underline;
-  background-color: #4D493E;
-  color: #C8C2AA;
-}
-.user-page > div:last-of-type {
-  float: right;
-  padding: 5px 10px;
-  width: calc(80% - 46px);
-  margin: 10px;
-}
-.user-page .user-profile {
+.diagnose-section {
   border: solid #4D493E 3px;
 }
-.user-page .user-profile h2, .user-page .user-profile h3, .user-page .user-profile h4 {
+.diagnose-section h2, .diagnose-section h3, .diagnose-section h4 {
   background-color: #4D493E;
   color: #C8C2AA;
   box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
 }
-.user-page .user-profile h2 {
-  margin-top: 30px;
-  font-size: 2rem;
-  padding: 3px 80px 3px 30px;
-  margin-bottom: 10px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.user-page .user-profile h2:first-child {
+.diagnose-section h1, .diagnose-section > span {
   background-color: #C8C2AA;
   color: #4D493E;
   text-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
   box-shadow: none;
   border-bottom: solid #4D493E 3px;
   padding-right: 120px;
+  font-size: 3rem;
 }
-.user-page .user-profile h3 {
+.diagnose-section h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  padding: 3px 30px;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+.diagnose-section h3 {
   margin-top: 16px;
   padding: 2px 10px;
   width: 200px;
+  cursor: pointer;
+  color: #4D493E;
+  background-color: #C8C2AA;
+  box-shadow: none;
+  border-bottom: solid #4D493E 3px;
+  border-top: solid #4D493E 3px;
 }
-.user-page .user-profile h4 {
+.diagnose-section h3:hover {
+  background-color: #4D493E;
+  color: #C8C2AA;
+  box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
+  border: none;
+}
+.diagnose-section h4 {
   margin-top: 15px;
   max-width: 200px;
   padding: 2px 10px;
 }
-.user-page .user-profile img {
-  max-height: 360px;
+.diagnose-section input[type=number] {
+  width: 40px;
 }
-.user-page .user-profile li {
+.diagnose-section li {
   list-style-type: disc;
   margin: 7px 0px 7px 30px;
+  max-width: 300px;
 }
-.user-page .user-profile p {
-  margin-top: 7px;
+.diagnose-section li p {
+  display: inline;
 }
-.user-page::after {
-  clear: both;
-  content: "";
+.diagnose-section li span {
+  float: right;
+}
+.diagnose-section > span {
   display: block;
+  margin-top: 15px;
+  font-size: 1.5rem;
+  max-width: 200px;
+}
+.diagnose-section p {
+  margin-top: 7px;
 }

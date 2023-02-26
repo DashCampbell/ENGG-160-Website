@@ -1,5 +1,46 @@
 body {
     background-color: rgb(169, 222, 255);
+
+    .user-page {
+        background-color: $nier-bg-color;
+        color: $nier-font-color;
+        .side-bar {
+            float: left;
+            width: 20%;
+            background-color: $nier-bg-color;
+            height: 100%;
+            
+            li {
+                border-color: $nier-font-color;
+                border-width: 3px;
+                border-style: solid;
+                
+                a{
+                    display: block;
+                    padding: 10px 15px;
+                    color: $nier-font-color; 
+                    &:hover{
+                        text-decoration: underline;
+                        background-color: $nier-font-color;
+                        color: $nier-bg-color;
+                    }
+                }
+            }
+        }
+        >div:last-of-type {
+            float: right;
+            padding: 5px 10px;
+            width: calc(80% - 46px);
+            margin: 10px;
+        }
+        
+        &::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+    }
 }
 @import "homepage.scss" ;
 @import "login.scss";
+@import "user_profile.scss";
