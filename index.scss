@@ -5,6 +5,9 @@ $sub-color: #4fdbde;
 $nier-bg-color:  #C8C2AA;
 $nier-font-color: #4D493E;
 $nier-box-shadow: 3px 3px 0 rgba($nier-font-color, .3);
+// https://github.com/metakirby5/yorha/blob/master/src/yorha/consts.styl
+$nier-grey: #BAB5A1;
+$nier-light: #DCD8C0;
 
 * {  
 margin: 0;
@@ -21,80 +24,13 @@ a{
     color: white;
     text-decoration: none
 }
-
+.current-page {
+    background-color: $nier-font-color;
+    a{
+        color: $nier-light !important;
+    }
+}
 
 @import 'sass/header.scss';
 @import 'sass/body.scss'; 
-@import 'sass/footer.scss';  
-.diagnose-section {
-    border: solid $nier-font-color 3px;
-    h2, h3, h4{
-        background-color: $nier-font-color;
-        color: $nier-bg-color;
-        box-shadow: $nier-box-shadow;
-    }
-    h1, >span {
-        background-color: $nier-bg-color;
-        color: $nier-font-color;
-        text-shadow: $nier-box-shadow;
-        box-shadow: none;
-        border-bottom: solid $nier-font-color 3px;
-        padding-right: 120px;
-        font-size: 3rem;
-    }
-    h2{
-        margin-top: 30px;
-        font-size: 2rem;
-        padding: 3px 30px;
-        margin-bottom: 10px;
-        max-width: 300px;
-    }
-    h3 {
-        margin-top: 16px;
-        padding: 2px 10px;
-        width: 200px;
-
-        cursor: pointer;
-        color: $nier-font-color;
-        background-color: $nier-bg-color;
-        box-shadow: none;
-        border-bottom: solid $nier-font-color 3px;
-        border-top: solid $nier-font-color 3px;
-        &:hover {
-            background-color: $nier-font-color;
-            color: $nier-bg-color;
-            box-shadow: $nier-box-shadow;
-            border: none;
-        }
-    }
-    h4{
-        margin-top: 15px;
-        max-width: 200px;
-        padding: 2px 10px;
-    }
-    input[type="number"]{
-        width: 40px;
-    }
-    li {
-        list-style-type: disc;
-        margin: 7px 0px 7px 30px;
-        max-width: 300px;
-        p {
-            display: inline;
-        }
-        span {
-            float: right;
-        }
-    }
-    >span {
-        display: block;
-        margin-top: 15px;
-        font-size: 1.5rem;
-        max-width: 200px;
-
-       
-    }
-    p{
-        margin-top: 7px;
-    }
-} 
+@import 'sass/footer.scss';        

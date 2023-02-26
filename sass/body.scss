@@ -7,7 +7,7 @@ body {
         .side-bar {
             float: left;
             width: 20%;
-            background-color: $nier-bg-color;
+            background-color: $nier-grey;
             height: 100%;
             
             li {
@@ -44,3 +44,4 @@ body {
 @import "homepage.scss" ;
 @import "login.scss";
 @import "user_profile.scss";
+@import "diagnose.scss";
