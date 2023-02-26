@@ -1,10 +1,16 @@
 $main-color: #0adbde;
 $sub-color: #4fdbde;
 
+// https://codepen.io/lgkonline/pen/WpMRQG?css-preprocessor=sass
+$nier-bg-color:  #C8C2AA;
+$nier-font-color: #4D493E;
+$nier-box-shadow: 3px 3px 0 rgba($nier-font-color, .3);
+
 * {  
 margin: 0;
 padding: 0;
-font-family: Arial, Helvetica, sans-serif;
+font-family: "Noto Sans", sans-serif;
+font-weight: 300;
 }
 li{
     list-style-type: none;
@@ -21,45 +27,69 @@ a{
 @import 'sass/body.scss'; 
 @import 'sass/footer.scss';  
 .user-page {
+    background-color: $nier-bg-color;
+    color: $nier-font-color;
     .side-bar {
         float: left;
         width: 20%;
-        background-color: rgb(166, 166, 166);
-        color: white;
+        background-color: $nier-bg-color;
         height: 100%;
         
         li {
-            border-color: white;
+            border-color: $nier-font-color;
             border-width: 3px;
             border-style: solid;
             
             a{
-                padding: 10px 15px;
                 display: block;
-            }
-            &:hover{
-                text-decoration: underline;
-                background-color: rgb(206, 206, 206);
+                padding: 10px 15px;
+                color: $nier-font-color; 
+                &:hover{
+                    text-decoration: underline;
+                    background-color: $nier-font-color;
+                    color: $nier-bg-color;
+                }
             }
         }
     }
     >div:last-of-type {
         float: right;
-        padding: 20px 30px;
-        width: calc(80% - 60px);
+        padding: 5px 10px;
+        width: calc(80% - 46px);
+        margin: 10px;
     }
     .user-profile {
+        border: solid $nier-font-color 3px;
+        h2, h3, h4{
+            background-color: $nier-font-color;
+            color: $nier-bg-color;
+            box-shadow: $nier-box-shadow;
+        }
         h2{
             margin-top: 30px;
             font-size: 2rem;
+            padding: 3px 80px 3px 30px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        h2:first-child{
+            background-color: $nier-bg-color;
+            color: $nier-font-color;
+            text-shadow: $nier-box-shadow;
+            box-shadow: none;
+            border-bottom: solid $nier-font-color 3px;
+            padding-right: 120px;
         }
         h3 {
             margin-top: 16px;
+            padding: 2px 10px;
+            width: 200px;
+
         }
         h4{
-            margin-top: 10px;
-            border-bottom: solid black 2px;
-            max-width: 360px;
+            margin-top: 15px;
+            max-width: 200px;
+            padding: 2px 10px;
         }
         img {
             max-height: 360px;

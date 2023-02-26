@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
 }
 
 li {
@@ -174,42 +175,71 @@ footer::after {
   display: block;
 }
 
+.user-page {
+  background-color: #C8C2AA;
+  color: #4D493E;
+}
 .user-page .side-bar {
   float: left;
   width: 20%;
-  background-color: rgb(166, 166, 166);
-  color: white;
+  background-color: #C8C2AA;
   height: 100%;
 }
 .user-page .side-bar li {
-  border-color: white;
+  border-color: #4D493E;
   border-width: 3px;
   border-style: solid;
 }
 .user-page .side-bar li a {
-  padding: 10px 15px;
   display: block;
+  padding: 10px 15px;
+  color: #4D493E;
 }
-.user-page .side-bar li:hover {
+.user-page .side-bar li a:hover {
   text-decoration: underline;
-  background-color: rgb(206, 206, 206);
+  background-color: #4D493E;
+  color: #C8C2AA;
 }
 .user-page > div:last-of-type {
   float: right;
-  padding: 20px 30px;
-  width: calc(80% - 60px);
+  padding: 5px 10px;
+  width: calc(80% - 46px);
+  margin: 10px;
+}
+.user-page .user-profile {
+  border: solid #4D493E 3px;
+}
+.user-page .user-profile h2, .user-page .user-profile h3, .user-page .user-profile h4 {
+  background-color: #4D493E;
+  color: #C8C2AA;
+  box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
 }
 .user-page .user-profile h2 {
   margin-top: 30px;
   font-size: 2rem;
+  padding: 3px 80px 3px 30px;
+  margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.user-page .user-profile h2:first-child {
+  background-color: #C8C2AA;
+  color: #4D493E;
+  text-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
+  box-shadow: none;
+  border-bottom: solid #4D493E 3px;
+  padding-right: 120px;
 }
 .user-page .user-profile h3 {
   margin-top: 16px;
+  padding: 2px 10px;
+  width: 200px;
 }
 .user-page .user-profile h4 {
-  margin-top: 10px;
-  border-bottom: solid black 2px;
-  max-width: 360px;
+  margin-top: 15px;
+  max-width: 200px;
+  padding: 2px 10px;
 }
 .user-page .user-profile img {
   max-height: 360px;
