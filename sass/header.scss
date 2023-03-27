@@ -3,19 +3,23 @@ header {
 
     // Top Header
     img {
-        max-height: 150px;
+        max-height: 3rem;
     }
+
     div>img {
-        float:left;
+        float: left;
     }
+
     div>h1 {
-       float: left;
-       margin: 35px 120px;
-       font-size: 4rem;
+        float: left;
+        margin: 35px 120px;
+        font-size: 4rem;
     }
-    div>div{
-        float:right;
+
+    div>div {
+        float: right;
         position: relative;
+
         a {
             display: block;
             position: absolute;
@@ -25,21 +29,25 @@ header {
             padding: 10px 0;
             font-size: 1.1rem;
             background-color: rgba(183, 183, 183, 0.5);
-            &:hover{              
+
+            &:hover {
                 background-color: rgba(183, 183, 183, 0.9);
             }
         }
     }
+
     >div::after {
         content: "";
         clear: both;
         display: block;
     }
+
     // Bottom Header
-    ul{
+    ul {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin: 0 15%;
+
         li {
             display: inline;
             text-align: center;
@@ -47,8 +55,9 @@ header {
             font-size: 1.2rem;
             background-color: $sub-color;
             color: #fff;
-            &:hover{
-              background-color: #25f7fa  
+
+            &:hover {
+                background-color: #25f7fa
             }
         }
     }

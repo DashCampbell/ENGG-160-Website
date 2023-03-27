@@ -2,35 +2,44 @@ $main-color: #0adbde;
 $sub-color: #4fdbde;
 
 // https://codepen.io/lgkonline/pen/WpMRQG?css-preprocessor=sass
-$nier-bg-color:  #C8C2AA;
+$nier-bg-color: #C8C2AA;
 $nier-font-color: #4D493E;
 $nier-box-shadow: 3px 3px 0 rgba($nier-font-color, .3);
 // https://github.com/metakirby5/yorha/blob/master/src/yorha/consts.styl
 $nier-grey: #BAB5A1;
 $nier-light: #DCD8C0;
 
-* {  
-margin: 0;
-padding: 0;
-font-family: "Noto Sans", sans-serif;
-font-weight: 300;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
 }
-li{
+
+li {
     list-style-type: none;
 }
-a{
+
+a {
     cursor: pointer;
-    text-align:center;
+    text-align: center;
     color: white;
     text-decoration: none
 }
+
 .current-page {
     background-color: $nier-font-color;
-    a{
+
+    a {
         color: $nier-light !important;
     }
 }
 
 @import 'sass/header.scss';
-@import 'sass/body.scss'; 
-@import 'sass/footer.scss';        
+@import 'sass/body.scss';
+@import 'sass/footer.scss';
+
+
+// Media Quries
+
+@media screen and (max-width: 720px) {}
