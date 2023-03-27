@@ -2,23 +2,28 @@ header {
     background-color: $main-color;
 
     // Top Header
-    img {
-        max-height: 150px;
-    }
-
     div>img {
         float: left;
+        width: min(15%, 150px);
     }
 
     div>h1 {
         float: left;
-        margin: 35px 120px;
-        font-size: 4rem;
+        margin: 35px 0;
+        font-size: 3rem;
+        $p: 3rem;
+        padding: 0 $p;
+        width: calc(70% - 2*$p);
     }
 
     div>div {
         float: right;
         position: relative;
+        width: min(15%, 150px);
+
+        img {
+            width: 100%;
+        }
 
         a {
             display: block;

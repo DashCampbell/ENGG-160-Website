@@ -8,11 +8,12 @@ $nier-box-shadow: 3px 3px 0 rgba($nier-font-color, .3);
 // https://github.com/metakirby5/yorha/blob/master/src/yorha/consts.styl
 $nier-grey: #BAB5A1;
 $nier-light: #DCD8C0;
+$nier-grid-color: #CCC8B1;
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Helvetica", "Noto Sans", sans-serif;
     font-weight: 300;
 }
 
@@ -38,3 +39,48 @@ a {
 @import 'sass/header.scss';
 @import 'sass/body.scss';
 @import 'sass/footer.scss';
+
+@media screen and (max-width: 720px) {
+    header div>h1 {
+        font-size: 2rem;
+    }
+
+    .home-page>div ul.download-links {
+        grid-template-columns: 1fr;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+
+    .graph {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header div>h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    header ul {
+        grid-template-columns: 1fr;
+        margin: 0 2%;
+    }
+
+    .home-page>div p {
+        width: 85%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    body .user-page .side-bar {
+        width: 100%;
+    }
+
+    body .user-page>div:last-of-type {
+        margin: 10px 2%;
+        width: calc(100% - 4% - 20px);
+    }
+}
