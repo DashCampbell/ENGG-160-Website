@@ -26,20 +26,24 @@ a {
 header {
   background-color: #0adbde;
 }
-header img {
-  max-height: 150px;
-}
 header div > img {
   float: left;
+  width: min(15%, 150px);
 }
 header div > h1 {
   float: left;
-  margin: 35px 120px;
-  font-size: 4rem;
+  margin: 35px 0;
+  font-size: 3rem;
+  padding: 0 3rem;
+  width: calc(70% - 6rem);
 }
 header div > div {
   float: right;
   position: relative;
+  width: min(15%, 150px);
+}
+header div > div img {
+  width: 100%;
 }
 header div > div a {
   display: block;
@@ -355,4 +359,38 @@ footer::after {
   clear: both;
   content: "";
   display: block;
+}
+
+@media screen and (max-width: 720px) {
+  header div > h1 {
+    font-size: 2rem;
+  }
+  .home-page > div ul.download-links {
+    grid-template-columns: 1fr;
+  }
+  .home-page > div ul.download-links li {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  header div > h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  header ul {
+    grid-template-columns: 1fr;
+    margin: 0 2%;
+  }
+  .home-page > div p {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+  body .user-page .side-bar {
+    width: 100%;
+  }
+  body .user-page > div:last-of-type {
+    margin: 10px 2%;
+    width: calc(96% - 20px);
+  }
 }
