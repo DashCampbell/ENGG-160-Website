@@ -86,7 +86,7 @@ body {
 body .user-page {
   background-color: #C8C2AA;
   color: #4D493E;
-  background-size: 0.5rem;
+  background-size: 0.4rem;
   background-image: linear-gradient(to right, #ccc8b1 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #ccc8b1 1px, rgba(204, 200, 177, 0) 1px);
 }
 body .user-page .side-bar {
@@ -252,6 +252,7 @@ body .user-page::after {
 }
 .user-profile .graph {
   margin-top: 10px;
+  border: 3px solid #4D493E;
 }
 
 .diagnose-section {
