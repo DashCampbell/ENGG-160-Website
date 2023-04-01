@@ -66,21 +66,24 @@
                 </li>
             </ul>
             <h3>Submit Information</h3>
-            <span>Potential Illnesses</span>
-            <ul>
-                <li>
-                    <p>Common Cold</p><span>90% Certainty</span>
-                </li>
-                <li>
-                    <p>Fever</p><span>40% Certainty</span>
-                </li>
-                <li>
-                    <p>Tuberculosis</p><span>60% Certainty</span>
-                </li>
-                <li>
-                    <p>None</p><span>10% Certainty</span>
-                </li>
-            </ul>
+            <div style="display: none;">
+
+                <span>Potential Illnesses</span>
+                <ul>
+                    <li>
+                        <p>Common Cold</p><span>90% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Fever</p><span>40% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Tuberculosis</p><span>60% Certainty</span>
+                    </li>
+                    <li>
+                        <p>None</p><span>10% Certainty</span>
+                    </li>
+                </ul>
+            </div>
             <h2>Cancer</h2>
             <ul>
                 <li>
@@ -103,27 +106,29 @@
                 </li>
             </ul>
             <h3>Submit Information</h3>
-            <span>Potential Cancers</span>
-            <ul>
-                <li>
-                    <p>Lung Cancer</p><span>90% Certainty</span>
-                </li>
-                <li>
-                    <p>Breast Cancer</p><span>5% Certainty</span>
-                </li>
-                <li>
-                    <p>Brain Cancer</p><span>10% Certainty</span>
-                </li>
-                <li>
-                    <p>Skin Cancer</p><span>40% Certainty</span>
-                </li>
-                <li>
-                    <p>Colin Cancer</p><span>20% Certainty</span>
-                </li>
-                <li>
-                    <p>None</p><span>2% Certainty</span>
-                </li>
-            </ul>
+            <div style="display: none;">
+                <span>Potential Cancers</span>
+                <ul>
+                    <li>
+                        <p>Lung Cancer</p><span>90% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Breast Cancer</p><span>5% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Brain Cancer</p><span>10% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Skin Cancer</p><span>40% Certainty</span>
+                    </li>
+                    <li>
+                        <p>Colin Cancer</p><span>20% Certainty</span>
+                    </li>
+                    <li>
+                        <p>None</p><span>2% Certainty</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
@@ -146,5 +151,12 @@
         </ul>
     </div>
 </footer>
+<script src="jQuery.js">
+</script>
+<script>
+    $("h3").click(function () {
+        $("h3+div").slideToggle();
+    });
+</script>
 
 </html>

@@ -258,12 +258,15 @@ body .user-page::after {
 .diagnose-section {
   border: solid #4D493E 3px;
 }
-.diagnose-section h2, .diagnose-section h3, .diagnose-section label {
+.diagnose-section h2,
+.diagnose-section h3,
+.diagnose-section label {
   background-color: #4D493E;
   color: #C8C2AA;
   box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
 }
-.diagnose-section h1, .diagnose-section > span {
+.diagnose-section h1,
+.diagnose-section > div > span {
   background-color: #C8C2AA;
   color: #4D493E;
   text-shadow: 3px 3px 0 rgba(77, 73, 62, 0.3);
@@ -322,7 +325,7 @@ body .user-page::after {
 .diagnose-section li span {
   float: right;
 }
-.diagnose-section > span {
+.diagnose-section > div > span {
   display: block;
   margin-top: 15px;
   font-size: 1.5rem;
